@@ -99,14 +99,14 @@ strong, b {
 .button-text {
     display: inline-block;
     background-color: #3586FF;
-    border-radius: 1.3vh;
-    padding: 2vh 8vh;
+    border-radius: .5rem;
+    padding: 1em 4em;
     color: white;
     text-decoration: none;
     font-weight: 600;
-    margin: 1vh 0;
+    margin: 2em 0;
     outline: #3586FF solid 1px;
-    outline-offset: .5vh;
+    outline-offset: .3rem;
 }
 
 .flex-row{
@@ -121,9 +121,9 @@ strong, b {
 
 .card{
     background-color: white;
-    border-radius: 1.3vh;
+    border-radius: .9em;
     text-align: center;
     font-weight: 700;
-    padding: 2vh 10vh;
-    margin: 0 5vh;
+    padding: 2em 4em;
+    margin: 0 5rem;
 }
