@@ -25,6 +25,13 @@
     font-display: swap;
 }
 
+
+:root {
+    --text-color: #3c4148;
+    --bold-text-color: #07172e;
+    --accent: #3586FF;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -34,8 +41,6 @@ body {
     font-family: "Manrope", Arial, sans-serif;
     font-weight: 400;
     background: linear-gradient(90deg, #ffffff 0%, #E6EBF0 100%) no-repeat fixed;
-    --text-color: #3c4148;
-    --bold-text-color: #07172e;
     color: var(--text-color);
     font-size: 20px;
 }
@@ -98,32 +103,57 @@ strong, b {
 
 .button-text {
     display: inline-block;
-    background-color: #3586FF;
+    text-align: center;
+    background-color: var(--accent);
     border-radius: .5rem;
-    padding: 1em 4em;
+    padding: 1em 0;
+    width: 16em;
     color: white;
     text-decoration: none;
     font-weight: 600;
     margin: 2em 0;
-    outline: #3586FF solid 1px;
+    outline: var(--accent) solid 1px;
     outline-offset: .3rem;
 }
 
-.flex-row{
+.flex-row {
     display: flex;
     flex-direction: row;
 }
 
-.flex-column{
+.flex-column {
     display: flex;
     flex-direction: column;
 }
 
-.card{
+.card {
     background-color: white;
     border-radius: .9em;
     text-align: center;
     font-weight: 700;
     padding: 2em 4em;
-    margin: 0 5rem;
+    margin: 0 2rem;
+}
+
+.bg-img {
+    align-items: flex-start;
+    background-image: url("/img/5.jpg");
+    background-repeat: no-repeat;
+    background-position: right 2% center;
+    max-width: 1160px;
+    margin: 5em auto 0 auto;
+    border-radius: 1.5rem;
+}
+
+.bg-img h2 {
+    margin: 2em 0 0 1.5em;
+}
+
+.bg-img p {
+    margin: 0 0 0 3.5em;
+    max-width: 30em;
+}
+
+.bg-img .button-text {
+    margin: 2em 0 5em 3.5em;
 }
