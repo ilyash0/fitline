@@ -57,6 +57,12 @@ h2 {
     color: var(--bold-text-color);
 }
 
+h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--bold-text-color);
+}
+
 strong, b {
     font-weight: 600;
     color: var(--bold-text-color);
@@ -101,6 +107,10 @@ strong, b {
     margin: 10vh 20vh 0;
 }
 
+.content > div :is(h1,h2,h3,h4,h5,h6,p) {
+    margin: 0;
+}
+
 .button-text {
     display: inline-block;
     text-align: center;
@@ -141,7 +151,7 @@ strong, b {
     background-repeat: no-repeat;
     background-position: right 2% center;
     max-width: 1160px;
-    margin: 5em auto 0 auto;
+    margin: 5em auto;
     border-radius: 1.5rem;
 }
 
@@ -157,3 +167,27 @@ strong, b {
 .bg-img .button-text {
     margin: 2em 0 5em 3.5em;
 }
+
+.online-course {
+    gap: 2em;
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.badge-container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.badge {
+    background: white;
+    padding: .75rem 1.125rem;
+    border-radius: .75rem;
+    font-weight: 700;
+    font-size: 1rem;
+    display: inline-flex;
+    gap: .7rem;
+}
+
