@@ -145,7 +145,7 @@ strong, b {
     padding: 2em 4em;
 }
 
-.bg-img {
+.bg-img-section {
     align-items: flex-start;
     background-image: url("../img/5.jpg");
     background-repeat: no-repeat;
@@ -155,20 +155,20 @@ strong, b {
     border-radius: 1.5rem;
 }
 
-.bg-img h2 {
+.bg-img-section h2 {
     margin: 2em 0 0 1.5em;
 }
 
-.bg-img p {
+.bg-img-section p {
     margin: 0 0 0 3.5em;
     max-width: 30em;
 }
 
-.bg-img .primary-button {
+.bg-img-section .primary-button {
     margin: 2em 0 5em 3.5em;
 }
 
-.online-course {
+.online-course-section {
     gap: 2em;
     max-width: 1160px;
     margin: 2em auto;
@@ -259,4 +259,19 @@ strong, b {
     font-size: 0.8rem;
     font-weight: 600;
 }
+
+.info-section {
+    width: 100%;
+    background: linear-gradient(90deg, #EBEEF2 0%, #FFFFFF 100%);
+    padding: 2em 0;
+    margin: 4em auto;
+}
+
+.info-content {
+    align-items: center;
+    gap: 2em;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
 
