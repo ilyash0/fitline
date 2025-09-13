@@ -159,6 +159,59 @@
         </div>
     </section>
 
+    <section class="content form-section">
+        <div class="form-container">
+            <h3>Персональный план питания</h3>
+            <p class="form-description">
+                Важно уделять внимание не только физическим упражнениям, но и
+                полноценному питанию. Заполните анкету и мы пришлем вам план
+                питания на месяц с учетом ваших особенностей и образа жизни.
+            </p>
+
+            <form class="nutrition-form">
+                <div class="input-group">
+                    <div class="form-field">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+
+                <div class="form-field full-width">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="goal-group">
+                    <p>Ваша цель</p>
+                    <div class="goal-options">
+                        <div class="radio-option">
+                            <input type="radio" id="weight-loss" name="goal" value="weight-loss" checked>
+                            <label for="weight-loss">Снижение веса</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="mass-gain" name="goal" value="mass-gain">
+                            <label for="mass-gain">Набор массы</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="other-goal" name="goal" value="other">
+                            <label for="other-goal">Другая цель</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="privacy-policy" name="privacy-policy" checked required>
+                    <label for="privacy-policy">Я согласен на обработку моих персональных данных</label>
+                </div>
+
+                <button type="submit" class="primary-button form-button">Продолжить</button>
+            </form>
+        </div>
+    </section>
 </main>
 <footer class="footer">Футер</footer>
 </body>

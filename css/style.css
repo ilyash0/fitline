@@ -120,6 +120,7 @@ strong, b {
     text-align: center;
     background-color: var(--accent);
     border-radius: .5rem;
+    border: none;
     padding: 1em 0;
     width: 14.5em;
     color: white;
@@ -312,4 +313,174 @@ strong, b {
     color: white;
 }
 
+.form-section {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.form-container {
+    background: linear-gradient(90deg, #EBEEF2 0%, #FFFFFF 100%);
+    padding: 4em 12em;
+    border-radius: 1.5rem;
+    max-width: 600px;
+    text-align: center;
+}
+
+.form-description {
+    font-weight: 600;
+    margin: 1rem 0 3rem 0 !important;
+}
+
+.nutrition-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.form-field label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.form-field input[type="text"],
+.form-field input[type="tel"],
+.form-field input[type="email"] {
+    border: 1px solid #c9cdd3;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.form-field.full-width {
+    width: 100%;
+}
+
+.goal-group {
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.goal-group p {
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: .5rem !important;
+}
+
+.goal-options {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.radio-option input[type="radio"] {
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    position: relative;
+    margin: 0 8px 0 0;
+    cursor: pointer;
+}
+
+/* Псевдоэлемент для создания "прорези" */
+/*.radio-option input[type="radio"]::before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: 16px;*/
+/*    left: 50%;*/
+/*    transform: translateX(-50%);*/
+/*    width: 6px;*/
+/*    height: 4px;*/
+/*    background-color: #fff;*/
+/*}*/
+
+/* Псевдоэлемент для внутренней точки (появляется при :checked) */
+.radio-option input[type="radio"]::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--accent);
+
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.radio-option input[type="radio"]:checked::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.radio-option label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--bold-text-color);
+    cursor: pointer;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.checkbox-container input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--accent);
+    border-radius: 0.25rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.checkbox-container input[type="checkbox"]:checked::after {
+    content: '✔';
+    display: block;
+    color: var(--accent);
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.checkbox-container label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form-button {
+    padding: 1.25rem 0;
+    margin: 2rem auto 0 auto;
+    font-size: 1.125rem;
+}
 
