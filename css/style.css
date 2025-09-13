@@ -129,6 +129,7 @@ strong, b {
     margin-top: 2em;
     outline: var(--accent) solid 1px;
     outline-offset: .3rem;
+    cursor: pointer;
 }
 
 .flex-row {
@@ -318,7 +319,7 @@ strong, b {
     align-items: center;
     min-height: 100vh;
     padding: 0;
-    margin: 0;
+    margin: 2em 0 0 0;
 }
 
 .form-container {
@@ -484,3 +485,30 @@ strong, b {
     font-size: 1.125rem;
 }
 
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 6em 4em 6em;
+    align-items: center;
+    color: var(--bold-text-color);
+    font-weight: 600;
+}
+
+.footer-link {
+    font-size: 1rem;
+    color: var(--bold-text-color);
+}
+
+.footer-link:hover {
+    color: #007bff;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-img {
+    width: 25px;
+}
