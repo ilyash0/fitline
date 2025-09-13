@@ -58,9 +58,13 @@ h2 {
 }
 
 h3 {
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--bold-text-color);
+}
+
+p {
+    font-size: 1rem;
 }
 
 strong, b {
@@ -117,11 +121,11 @@ strong, b {
     background-color: var(--accent);
     border-radius: .5rem;
     padding: 1em 0;
-    width: 16em;
+    width: 14.5em;
     color: white;
     text-decoration: none;
     font-weight: 600;
-    margin: 2em 0;
+    margin-top: 2em;
     outline: var(--accent) solid 1px;
     outline-offset: .3rem;
 }
@@ -183,11 +187,16 @@ strong, b {
 .badge {
     background: white;
     padding: .75rem 1.125rem;
-    border-radius: .75rem;
+    border-radius: .5rem;
     font-weight: 700;
     font-size: 1rem;
     display: inline-flex;
     gap: .7rem;
+}
+
+.badge.active {
+    background: var(--accent);
+    color: white;
 }
 
 .team-section {
@@ -276,6 +285,31 @@ strong, b {
 
 .rounded-edges {
     border-radius: 1rem
+}
+
+.steps {
+    gap: 2.5rem;
+    margin: 0 auto;
+}
+
+.step {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.small-badge {
+    background: white;
+    padding: .3rem 1.5rem;
+    border-radius: .5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline-flex;
+    margin-bottom: 1rem !important;
+}
+
+.small-badge.active {
+    background: var(--accent);
+    color: white;
 }
 
 
