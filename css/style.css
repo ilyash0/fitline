@@ -73,6 +73,12 @@ strong, b {
     color: var(--bold-text-color);
 }
 
+.eyebrow {
+    font-weight: 600;
+    color: var(--bold-text-color);
+    text-transform: uppercase;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
