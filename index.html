@@ -4,254 +4,287 @@
     <meta charset="UTF-8">
     <title>Fitline</title>
 
-    <meta name="description" content="Fitline — онлайн-платформа тренировок: йога, растяжка, HIIT. Курсы для похудения, набора массы и восстановления. Персональные планы питания и поддержка тренеров.">
-    <meta name="keywords" content="fitline, онлайн тренировки, фитнес онлайн, йога онлайн, растяжка, HIIT, персональный план питания, тренер, похудение, набор мышечной массы, восстановление, гибкость, домашние тренировки, программы тренировок">
+    <meta name="description"
+          content="Fitline — онлайн-платформа тренировок: йога, растяжка, HIIT. Курсы для похудения, набора массы и восстановления. Персональные планы питания и поддержка тренеров.">
+    <meta name="keywords"
+          content="fitline, онлайн тренировки, фитнес онлайн, йога онлайн, растяжка, HIIT, персональный план питания, тренер, похудение, набор мышечной массы, восстановление, гибкость, домашние тренировки, программы тренировок">
 
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="header">
-    <a class="logo" href="/" aria-label="Fitline — на главную">
+    <a class="header__logo" href="/" aria-label="Fitline — на главную">
         <img src="img/logotype.svg" alt="Fitline">
     </a>
 
     <nav aria-label="Основная навигация">
-        <ul class="header-menu">
-            <li><a class="nav-link" href="#">Йога</a></li>
-            <li><a class="nav-link" href="#">МФР</a></li>
-            <li><a class="nav-link" href="#">Растяжка</a></li>
-            <li><a class="nav-link" href="#">HIIT</a></li>
-            <li><a class="nav-link" href="#">Гайды</a></li>
+        <ul class="header__menu">
+            <li><a class="header__menu-link" href="#">Йога</a></li>
+            <li><a class="header__menu-link" href="#">МФР</a></li>
+            <li><a class="header__menu-link" href="#">Растяжка</a></li>
+            <li><a class="header__menu-link" href="#">HIIT</a></li>
+            <li><a class="header__menu-link" href="#">Гайды</a></li>
         </ul>
     </nav>
 
-    <div class="header-right">
-        <button class="button-img" aria-label="Поиск">
-            <img src="img/search.svg" class="header-img" alt="Поиск">
+    <div class="header__right">
+        <button class="header__search-button" aria-label="Поиск">
+            <img src="img/search.svg" class="header__icon" alt="Поиск">
         </button>
 
-        <a href="#" aria-label="Корзина" class="icon-link"><img src="img/cart.svg" class="header-img" alt="Корзина"></a>
+        <a href="#" aria-label="Корзина" class="header__icon-link">
+            <img src="img/cart.svg" class="header__icon" alt="Корзина">
+        </a>
 
         <a href="#" aria-label="Главная" class="icon-link">
-            <img src="img/home.svg" class="header-img" alt="Главная">
+            <img src="img/home.svg" class="header__icon" alt="Главная">
         </a>
     </div>
 </header>
 
 <main>
-    <section class="content">
-        <div>
-            <h1>Фитнес платформа онлайн-тренировок</h1>
-            <p>
+    <!-- HERO BLOCK -->
+    <section class="hero l-section">
+        <div class="hero__content">
+            <h1 class="hero__title">Фитнес платформа онлайн-тренировок</h1>
+            <p class="hero__text">
                 Тренировки разного уровня сложности и для любых целей: восстановление,
                 снижение веса, набор мышечной массы и многое другое. Занимайтесь когда и
                 где вам удобно.
             </p>
 
-            <a class="primary-button" href="#">Выбрать курс</a>
+            <a class="button button_primary" href="#">Выбрать курс</a>
         </div>
 
         <img src="img/1.png" width="613" alt="Поддержка тренера, уровни сложности и программы питания">
     </section>
 
-    <section class="content flex-column">
-        <h2>Выберите курс</h2>
+    <!-- COURSES BLOCK -->
+    <section class="courses l-section u-flex-column">
+        <h2 class="courses__title">Выберите курс</h2>
 
-        <div class="flex-row">
-            <a class="card-link" href="#">
-                <div class="flex-column card"><img src="img/2.png" height="238" width="186" alt="Йога"> Йога</div>
+        <div class="courses__list u-flex-row">
+            <a class="course-card" href="#">
+                <img src="img/2.png" height="238" width="186" alt="Йога" class="course-card__img">
+                <span class="course-card__title">Йога</span>
             </a>
-            <a class="card-link" href="#">
-                <div class="flex-column card"><img src="img/3.png" height="238" width="239" alt="Растяжка"> Растяжка
-                </div>
+
+            <a class="course-card" href="#">
+                <img src="img/3.png" height="238" width="239" alt="Растяжка" class="course-card__img">
+                <span class="course-card__title">Растяжка</span>
             </a>
-            <a class="card-link" href="#">
-                <div class="flex-column card"><img src="img/4.png" height="238" width="186" alt="HIIT"> HIIT</div>
+
+            <a class="course-card" href="#">
+                <img src="img/4.png" height="238" width="186" alt="HIIT" class="course-card__img">
+                <span class="course-card__title">HIIT</span>
             </a>
         </div>
 
-        <a class="primary-button" href="#">Смотреть все</a>
+        <a class="button button_primary" href="#">Смотреть все</a>
     </section>
 
-    <section class="content bg-img-section flex-column">
-        <h2>Попробуйте бесплатно</h2>
-        <p>Смотрите и выполняйте первую тренировку любого курса бесплатно и выбирайте то, что вам подходит больше
-            всего.</p>
+    <!-- PROMO BLOCK -->
+    <section class="promo l-section u-flex-column">
+        <h2 class="promo__title">Попробуйте бесплатно</h2>
+        <p class="promo__text">Смотрите и выполняйте первую тренировку любого курса бесплатно и выбирайте то, что вам
+            подходит больше всего.</p>
 
-        <a class="primary-button" href="#">Попробовать бесплатно</a>
+        <a class="button button_primary" href="#">Попробовать бесплатно</a>
     </section>
 
-    <section class="content flex-row online-course-section">
-        <img src="img/6.jpg" height="344" width="560" alt="Курс растяжки" class="rounded-edges">
-        <div class="flex-column">
-            <p class="eyebrow">Онлайн-курс</p>
-            <h2>Растяжка</h2>
-            <p>Классическая растяжка на все тело на платформе Fitline. Занятие для спины, стоп, продольного и
+    <!-- ONLINE COURSE BLOCK -->
+    <section class="online-course l-section u-flex-row">
+        <img src="img/6.jpg" height="344" width="560" alt="Курс растяжки" class="u-rounded">
+
+        <div class="online-course__info u-flex-column">
+            <p class="online-course__eyebrow">Онлайн-курс</p>
+            <h2 class="online-course__title">Растяжка</h2>
+            <p class="online-course__text">Классическая растяжка на все тело на платформе Fitline. Занятие для спины,
+                стоп, продольного и
                 поперечного
                 шпагата</p>
-            <div class="flex-row badge-container" style="margin-top: 2.4rem;">
-                <p class="badge">Высокий рейтинг <img src="img/star.svg" alt="Звёзд">5.0</p>
-                <p class="badge">
+            <div class="online-course__badges u-flex-row">
+                <p class="online-course__badge">Высокий рейтинг <img src="img/star.svg" alt="Звёзд">5.0</p>
+                <p class="online-course__badge">
                     <img src="img/time.svg" alt="Длительность: ">8 недель
                     <img src="img/calendar.svg" alt="Количество: ">24 тренировки
                 </p>
             </div>
-            <div class="flex-row badge-container">
-                <p class="course-price">2590 ₽</p>
-                <a class="primary-button" href="#">Купить курс</a>
+            <div class="online-course__buy u-flex-row">
+                <p class="online-course__price">2590 ₽</p>
+                <a class="button button_primary online-course__buy-btn" href="#">Купить курс</a>
             </div>
         </div>
     </section>
 
-    <div class="tabs" role="tablist" aria-label="Разделы">
-        <button class="tab active" id="tab-trainers">Тренеры</button>
-        <button class="tab" id="tab-equipment">Оборудование</button>
-        <button class="tab" id="tab-reviews">Отзывы</button>
-    </div>
+    <!-- TABS BLOCK -->
+    <section class="tabs">
+        <button class="tabs__tab steps__number_active" id="tab-trainers">Тренеры</button>
+        <button class="tabs__tab" id="tab-equipment">Оборудование</button>
+        <button class="tabs__tab" id="tab-reviews">Отзывы</button>
+    </section>
 
-    <section id="panel-trainers" class="team-section content flex-column">
-        <div class="flex-row">
-            <p class="team-desc">
+    <!-- TEAM BLOCK -->
+    <section class="team l-section u-flex-column">
+        <div class="team__top u-flex-row">
+            <p class="team__desc">
                 Занятия на платформе проводят профессиональные тренеры, спортсмены, мастера спорта. Очень важно доверять
                 тренеру, прислушиваться к нему, чтобы тренировка была эффективной
             </p>
 
-            <ul class="trainers-row">
-                <li class="trainer-card">
-                    <img class="trainer-img" src="img/7.png" alt="Ирина Усольцева">
-                    <p class="trainer-name">Ирина Усольцева</p>
-                    <p class="trainer-role">Мастер спорта по гимнастике</p>
+            <ul class="team__trainers-list">
+                <li class="team__trainer">
+                    <img class="team__trainer-img" src="img/7.png" alt="Ирина Усольцева">
+                    <p class="team__trainer-name">Ирина Усольцева</p>
+                    <p class="team__trainer-role">Мастер спорта по гимнастике</p>
                 </li>
 
-                <li class="trainer-card">
-                    <img class="trainer-img" src="img/8.png" alt="Елена Артемьева">
-                    <p class="trainer-name">Елена Артемьева</p>
-                    <p class="trainer-role">Артистка балета</p>
+                <li class="team__trainer">
+                    <img class="team__trainer-img" src="img/8.png" alt="Елена Артемьева">
+                    <p class="team__trainer-name">Елена Артемьева</p>
+                    <p class="team__trainer-role">Артистка балета</p>
                 </li>
 
-                <li class="trainer-card">
-                    <img class="trainer-img" src="img/9.png" alt="Алена Свиридова">
-                    <p class="trainer-name">Алена Свиридова</p>
-                    <p class="trainer-role">Чемпионка России по акробатике</p>
+                <li class="team__trainer">
+                    <img class="team__trainer-img" src="img/9.png" alt="Алена Свиридова">
+                    <p class="team__trainer-name">Алена Свиридова</p>
+                    <p class="team__trainer-role">Чемпионка России по акробатике</p>
                 </li>
             </ul>
         </div>
     </section>
 
-    <section class="info-section">
-        <div class="container info-content flex-row">
+    <!-- INFO BLOCK -->
+    <section class="info">
+        <div class="info__content u-flex-row">
             <div>
-                <h2>О платформе Fitline</h2>
-                <p>Fitline - это платформа онлайн-тренировок от лучших тренеров России. Большой выбор программ и
+                <h2 class="info__title">О платформе Fitline</h2>
+                <p class="info__text">Fitline - это платформа онлайн-тренировок от лучших тренеров России. Большой выбор
+                    программ и
                     разный уровень сложности в каждой из них позволят вам подобрать ту физическую нагрузку, которая
                     необходима. На платформе есть тренировки для разных целей: снижение веса, набор мышечной массы,
                     восстановление, развитие гибкости, поддержка общего тонуса организма.</p>
-                <a class="primary-button" href="#">Узнать больше</a>
+                <a class="button button_primary" href="#">Узнать больше</a>
             </div>
-            <img src="img/10.jpg" height="402" width="560" class="rounded-edges"
+            <img src="img/10.jpg" height="402" width="560" class="u-rounded"
                  alt="Женщина в спортивной форме выполняет боковую растяжку ног">
         </div>
     </section>
 
-    <section class="content flex-column">
-        <h2>Как это работает</h2>
-        <div class="flex-row steps">
-            <article class="step">
-                <p class="small-badge active">01</p>
-                <h3>Выбор программы</h3>
-                <p>Выберите программу, которая вам нравится или заполните анкету на сайте, чтобы мы смогли подобрать для
+    <!-- STEPS BLOCK -->
+    <section class="steps l-section u-flex-column">
+        <h2 class="steps__title">Как это работает</h2>
+        <div class="steps u-flex-row">
+            <article class="steps__step">
+                <p class="steps__number steps__number_active">01</p>
+                <h3 class="steps__heading">Выбор программы</h3>
+                <p class="steps__text">Выберите программу, которая вам нравится или заполните анкету на сайте, чтобы мы
+                    смогли подобрать для
                     вас наиболее подходящую тренировку.</p>
             </article>
-            <article class="step">
-                <p class="small-badge active">02</p>
-                <h3>Личный кабинет</h3>
-                <p>После оплаты тренировки появятся в личном кабинете. Каждая тренировка открывается после выполнения
+
+            <article class="steps__step">
+                <p class="steps__number steps__number_active">02</p>
+                <h3 class="steps__heading">Личный кабинет</h3>
+                <p class="steps__text">После оплаты тренировки появятся в личном кабинете. Каждая тренировка открывается
+                    после выполнения
                     предыдущей, чтобы распределять нагрузку.</p>
             </article>
-            <article class="step">
-                <p class="small-badge active">03</p>
-                <h3>Правильный темп</h3>
-                <p>Включите видео-тренировку и занимайтесь когда и где вам удобно. В тренировку включён таймер, чтобы вы
+
+            <article class="steps__step">
+                <p class="steps__number steps__number_active">03</p>
+                <h3 class="steps__heading">Правильный темп</h3>
+                <p class="steps__text">Включите видео-тренировку и занимайтесь когда и где вам удобно. В тренировку
+                    включён таймер, чтобы вы
                     могли следить за темпом и делать паузы.</p>
             </article>
-            <article class="step">
-                <p class="small-badge active">04</p>
-                <h3>Поддержка тренера</h3>
-                <p>Каждое занятие сопровождается инструкцией тренера по технике выполнения всех упражнений —
+
+            <article class="steps__step">
+                <p class="steps__number steps__number_active">04</p>
+                <h3 class="steps__heading">Поддержка тренера</h3>
+                <p class="steps__text">Каждое занятие сопровождается инструкцией тренера по технике выполнения всех
+                    упражнений —
                     прислушивайтесь, чтобы тренировка была безопасной.</p>
             </article>
         </div>
     </section>
 
-    <section class="content form-section">
-        <div class="form-container">
+    <!-- NUTRITION FORM BLOCK -->
+    <section class="nutrition l-section">
+        <div class="nutrition__container">
             <h2>Персональный план питания</h2>
-            <p class="form-description">
+            <p class="nutrition__description">
                 Важно уделять внимание не только физическим упражнениям, но и
                 полноценному питанию. Заполните анкету и мы пришлем вам план
                 питания на месяц с учетом ваших особенностей и образа жизни.
             </p>
 
-            <form class="nutrition-form">
-                <div class="input-group">
-                    <div class="form-field">
+            <form class="nutrition__form">
+                <div class="nutrition__input-group">
+                    <div class="nutrition__field">
                         <label for="name">Имя</label>
                         <input type="text" id="name" name="name" required>
                     </div>
-                    <div class="form-field">
+                    <div class="nutrition__field">
                         <label for="phone">Телефон</label>
                         <input type="tel" id="phone" name="phone" required>
                     </div>
                 </div>
 
-                <div class="form-field full-width">
+                <div class="nutrition__field nutrition__field_full">
                     <label for="email">E-mail</label>
                     <input type="email" id="email" name="email" required>
                 </div>
 
-                <fieldset class="goal-group">
+                <fieldset class="nutrition__goal-group">
                     <legend>Ваша цель</legend>
-                    <div class="goal-options">
-                        <div class="radio-option">
+                    <div class="nutrition__goal-options">
+                        <div class="nutrition__radio-option">
                             <input type="radio" id="weight-loss" name="goal" value="weight-loss" checked>
                             <label for="weight-loss">Снижение веса</label>
                         </div>
-                        <div class="radio-option">
+                        <div class="nutrition__radio-option">
                             <input type="radio" id="mass-gain" name="goal" value="mass-gain">
                             <label for="mass-gain">Набор массы</label>
                         </div>
-                        <div class="radio-option">
+                        <div class="nutrition__radio-option">
                             <input type="radio" id="other-goal" name="goal" value="other">
                             <label for="other-goal">Другая цель</label>
                         </div>
                     </div>
                 </fieldset>
 
-                <div class="checkbox-container">
+                <div class="nutrition__checkbox-container">
                     <input type="checkbox" id="privacy-policy" name="privacy-policy" required>
                     <label for="privacy-policy">Я согласен на обработку моих персональных данных</label>
                 </div>
 
-                <button type="submit" class="primary-button form-button">Продолжить</button>
+                <button type="submit" class="nutrition__submit button button_primary">Продолжить</button>
             </form>
         </div>
     </section>
 </main>
 
-<footer class="site-footer">
-    <div class="footer-copyright">
-        <p class="footer-text">Fitline © 2025 Все права защищены</p>
+<footer class="footer">
+    <div class="footer__copyright">
+        <p class="site-footer__text">Fitline © 2025 Все права защищены</p>
     </div>
 
-    <div class="social-icons">
-        <a href="#" rel="noopener noreferrer"><img src="img/facebook.svg" class="footer-img" alt="Facebook"></a>
-        <a href="#" rel="noopener noreferrer"><img src="img/vk.svg" class="footer-img" alt="Вконтакте"></a>
-        <a href="#" rel="noopener noreferrer"><img src="img/instagram.svg" class="footer-img" alt="Instagram"></a>
+    <div class="footer__social">
+        <a href="#" rel="noopener noreferrer">
+            <img src="img/facebook.svg" class="footer__icon" alt="Facebook">
+        </a>
+        <a href="#" rel="noopener noreferrer">
+            <img src="img/vk.svg" class="footer__icon" alt="Вконтакте">
+        </a>
+        <a href="#" rel="noopener noreferrer">
+            <img src="img/instagram.svg" class="footer__icon" alt="Instagram">
+        </a>
     </div>
 
-    <div class="footer-policy">
-        <a href="#" class="footer-link">Политика конфиденциальности</a>
+    <div class="footer__policy">
+        <a href="#" class="footer__link">Политика конфиденциальности</a>
     </div>
 </footer>
 </body>
