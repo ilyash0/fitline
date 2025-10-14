@@ -58,7 +58,7 @@
             <a class="button button_primary focus-outline" href="#">Выбрать курс</a>
         </div>
 
-        <img src="img/1.png" width="613" alt="Поддержка тренера, уровни сложности и программы питания">
+        <img src="img/1.webp" width="613" alt="Поддержка тренера, уровни сложности и программы питания">
     </section>
 
     <!-- COURSES BLOCK -->
@@ -67,17 +67,17 @@
 
         <div class="courses__list flex-row">
             <a class="course-card focus-outline" href="#">
-                <img src="img/2.png" height="238" width="186" alt="Йога" class="course-card__img">
+                <img src="img/2.webp" height="238" width="186" alt="Йога" class="course-card__img">
                 <span class="course-card__title">Йога</span>
             </a>
 
             <a class="course-card focus-outline" href="#">
-                <img src="img/3.png" height="238" width="239" alt="Растяжка" class="course-card__img">
+                <img src="img/3.webp" height="238" width="239" alt="Растяжка" class="course-card__img">
                 <span class="course-card__title">Растяжка</span>
             </a>
 
             <a class="course-card focus-outline" href="#">
-                <img src="img/4.png" height="238" width="186" alt="HIIT" class="course-card__img">
+                <img src="img/4.webp" height="238" width="186" alt="HIIT" class="course-card__img">
                 <span class="course-card__title">HIIT</span>
             </a>
         </div>
@@ -96,7 +96,7 @@
 
     <!-- ONLINE COURSE BLOCK -->
     <section class="online-course section flex-row">
-        <img src="img/6.jpg" height="344" width="560" alt="Курс растяжки" class="rounded">
+        <img src="img/6.webp" height="344" width="560" alt="Курс растяжки" class="rounded">
 
         <div class="online-course__info flex-column">
             <p class="online-course__eyebrow">Онлайн-курс</p>
@@ -121,13 +121,13 @@
 
     <!-- TABS BLOCK -->
     <section class="tabs-block">
-        <button class="tabs-block__tab tabs-block__tab_active focus-outline" id="tab-trainers">Тренеры</button>
-        <button class="tabs-block__tab focus-outline" id="tab-equipment">Оборудование</button>
-        <button class="tabs-block__tab focus-outline" id="tab-reviews">Отзывы</button>
+        <button class="tabs-block__tab tabs-block__tab_active focus-outline" data-tab="team">Тренеры</button>
+        <button class="tabs-block__tab focus-outline" data-tab="equipment">Оборудование</button>
+        <button class="tabs-block__tab focus-outline" data-tab="reviews">Отзывы</button>
     </section>
 
     <!-- TEAM BLOCK -->
-    <section class="team section flex-column">
+    <section class="team section flex-column" data-section="team">
         <div class="team__top flex-row">
             <p class="team__desc">
                 Занятия на платформе проводят профессиональные тренеры, спортсмены, мастера спорта. Очень важно доверять
@@ -136,24 +136,34 @@
 
             <ul class="team__trainers-list">
                 <li class="team__trainer">
-                    <img class="team__trainer-img" src="img/7.png" alt="Ирина Усольцева">
+                    <img class="team__trainer-img" src="img/7.webp" alt="Ирина Усольцева">
                     <p class="team__trainer-name">Ирина Усольцева</p>
                     <p class="team__trainer-role">Мастер спорта по гимнастике</p>
                 </li>
 
                 <li class="team__trainer">
-                    <img class="team__trainer-img" src="img/8.png" alt="Елена Артемьева">
+                    <img class="team__trainer-img" src="img/8.webp" alt="Елена Артемьева">
                     <p class="team__trainer-name">Елена Артемьева</p>
                     <p class="team__trainer-role">Артистка балета</p>
                 </li>
 
                 <li class="team__trainer">
-                    <img class="team__trainer-img" src="img/9.png" alt="Алена Свиридова">
+                    <img class="team__trainer-img" src="img/9.webp" alt="Алена Свиридова">
                     <p class="team__trainer-name">Алена Свиридова</p>
                     <p class="team__trainer-role">Чемпионка России по акробатике</p>
                 </li>
             </ul>
         </div>
+    </section>
+
+    <!-- EQUIPMENT BLOCK -->
+    <section class="equipment section flex-column disabled" data-section="equipment">
+        Информация об оборудовании
+    </section>
+
+    <!-- REVIEWS BLOCK -->
+    <section class="reviews section flex-column disabled" data-section="reviews">
+       Список отзывов
     </section>
 
     <!-- INFO BLOCK -->
@@ -168,7 +178,7 @@
                     восстановление, развитие гибкости, поддержка общего тонуса организма.</p>
                 <a class="button button_primary focus-outline" href="#">Узнать больше</a>
             </div>
-            <img src="img/10.jpg" height="402" width="560" class="rounded"
+            <img src="img/10.webp" height="402" width="560" class="rounded"
                  alt="Женщина в спортивной форме выполняет боковую растяжку ног">
         </div>
     </section>
