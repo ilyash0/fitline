@@ -29,7 +29,6 @@
 
 /* VARIABLES BLOCK */
 :root {
-    /* colors */
     --text-color: #3c4148;
     --muted: #6b7280;
     --bold-text-color: #07172e;
@@ -38,7 +37,6 @@
     --bg-gradient-start: #ffffff;
     --bg-gradient-end: #E6EBF0;
 
-    /* layout */
     --radius-sm: 0.5rem;
     --radius-md: 1rem;
     --radius-lg: 1.5rem;
@@ -109,6 +107,10 @@
     border-radius: var(--radius-md);
 }
 
+.disabled {
+    display: none;
+}
+
 
 /* HEADER BLOCK */
 .header {
@@ -135,7 +137,7 @@
     color: var(--bold-text-color);
 }
 
-.header__right {
+.header__buttons {
     display: flex;
     gap: var(--gap);
 }
@@ -148,7 +150,7 @@
     cursor: pointer;
 }
 
-.header__icon {
+.header__button-icon {
     width: 3.125rem;
 }
 
