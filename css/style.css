@@ -107,7 +107,7 @@
     border-radius: var(--radius-md);
 }
 
-.disabled {
+.hidden {
     display: none;
 }
 
@@ -152,6 +152,10 @@
 
 .header__button-icon {
     width: 3.125rem;
+}
+
+.header__menu-toggle {
+    display: none;
 }
 
 
@@ -345,9 +349,9 @@
     align-items: flex-start;
 }
 
-.team__desc {
+.team__description {
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .team__trainers-list {
@@ -388,6 +392,114 @@
     font-size: 0.8rem;
     font-weight: 600;
     margin: 0;
+}
+
+
+/* EQUIPMENT BLOCK */
+.equipment {
+    gap: 1.5rem;
+    align-items: center;
+    padding: 2rem;
+    max-width: 72.5rem;
+    margin: 2em auto;
+}
+
+.equipment__description {
+    line-height: 1.6;
+    text-align: left;
+    max-width: 100%;
+}
+
+.equipment__list {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.equipment__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    width: 10rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.equipment__icon {
+    width: 6rem;
+    height: 6rem;
+}
+
+
+/* REVIEWS BLOCK */
+.reviews {
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem;
+    max-width: 72.5rem;
+    margin: 2em auto;
+}
+
+.reviews__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.review-card {
+    background: #ffffff;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-sizing: border-box;
+}
+
+.review-card__header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.review-card__avatar {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-card__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.review-card__name {
+    font-weight: 700;
+    margin: 0;
+    color: var(--bold-text-color);
+}
+
+.review-card__rating {
+    display: flex;
+    gap: 0.2rem;
+}
+
+.review-card__star-image {
+    width: 1rem;
+    height: 1rem;
+}
+
+.review-card__text {
+    margin: 0;
+    line-height: 1.5;
 }
 
 

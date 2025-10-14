@@ -10,10 +10,15 @@ document.addEventListener('DOMContentLoaded', function () {
             tab.classList.add('tabs-block__tab_active');
 
             sections.forEach(section => {
-                section.classList.add('disabled');
+                section.classList.add('hidden');
             });
 
-            document.querySelector(`[data-section="${target}"]`).classList.remove('disabled');
+            document.querySelector(`[data-section="${target}"]`).classList.remove('hidden');
         });
     });
 });
+
+function toggleMenu() {
+    const menu = document.querySelector('.header__menu');
+    menu.classList.toggle('active');
+}
