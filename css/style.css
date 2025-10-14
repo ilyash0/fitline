@@ -48,64 +48,43 @@
 }
 
 
-/* RESET / BASE BLOCK */
-html, body {
-    height: 100%;
-    margin: 0;
-    font-size: 100%;
-}
-
-body {
+/* BASE BLOCK */
+.body {
     font-family: "Manrope", Arial, sans-serif;
     font-weight: 400;
     background: linear-gradient(90deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%) no-repeat fixed;
     color: var(--text-color);
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
-/* focus visible (accessibility) */
-.button:focus-visible,
-.header__search-button:focus-visible,
-.tabs__tab:focus-visible,
-a:focus-visible,
-input:focus-visible {
+.focus-outline:focus-visible {
     outline: 0.2rem solid #2865C1FF;
     outline-offset: 0.2rem;
 }
 
 
 /* TYPOGRAPHY BLOCK */
-h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    color: var(--bold-text-color);
-}
-
-h2 {
+.heading-1 {
     font-size: 3rem;
     font-weight: 700;
     color: var(--bold-text-color);
 }
 
-h3 {
+.heading-2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--bold-text-color);
+}
+
+.heading-3 {
     font-size: 2rem;
     font-weight: 700;
     color: var(--bold-text-color);
 }
 
-p {
-    font-size: 1rem;
-    color: var(--text-color);
-}
-
-strong, b {
-    font-weight: 600;
-    color: var(--bold-text-color);
-}
-
 
 /* LAYOUT / CONTAINER BLOCK */
-.l-section {
+.section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -114,19 +93,19 @@ strong, b {
     max-width: 90%;
 }
 
-.u-flex-row {
+.flex-row {
     display: flex;
     flex-direction: row;
     gap: var(--gap);
 }
 
-.u-flex-column {
+.flex-column {
     display: flex;
     flex-direction: column;
     gap: var(--gap);
 }
 
-.u-rounded {
+.rounded {
     border-radius: var(--radius-md);
 }
 
@@ -207,6 +186,9 @@ strong, b {
     margin: 0;
 }
 
+.hero__text {
+    font-size: 1.2rem;
+}
 
 /* COURSES BLOCK */
 .courses {
@@ -257,16 +239,16 @@ strong, b {
     border-radius: var(--radius-lg);
 }
 
-.promo h2 {
-    margin: 2em 0 0 1.5em;
+.promo__title {
+    margin: 2em 0 0 1.3em;
 }
 
-.promo p {
+.promo__text {
     margin: 0 0 0 3.5em;
     max-width: 30em;
 }
 
-.promo .button {
+.promo__button {
     margin: 2em 0 5em 3.5em;
 }
 
@@ -316,7 +298,7 @@ strong, b {
     gap: .7rem;
 }
 
-.online-course__badge.steps__number_active {
+.online-course__badge.tabs-block__tab_active {
     background: var(--accent);
     color: white;
 }
@@ -329,14 +311,14 @@ strong, b {
 
 
 /* TABS BLOCK */
-.tabs {
+.tabs-block {
     display: flex;
     max-width: 72.5rem;
     gap: var(--gap);
     margin: 0 auto;
 }
 
-.tabs__tab {
+.tabs-block__tab {
     border: none;
     padding: .9rem 2.2rem;
     border-radius: .75rem;
@@ -347,7 +329,7 @@ strong, b {
     font-size: 1rem;
 }
 
-.tabs__tab.steps__number_active {
+.tabs-block__tab.tabs-block__tab_active {
     background: var(--accent);
     color: white;
 }
@@ -397,11 +379,13 @@ strong, b {
     font-weight: 700;
     color: var(--bold-text-color);
     font-size: 1rem;
+    margin: 0;
 }
 
 .team__trainer-role {
     font-size: 0.8rem;
     font-weight: 600;
+    margin: 0;
 }
 
 
@@ -447,7 +431,7 @@ strong, b {
     margin: 0;
 }
 
-.steps__number.steps__number_active {
+.steps__number.tabs-block__tab_active {
     background: var(--accent);
     color: white;
 }
@@ -494,15 +478,13 @@ strong, b {
     flex-grow: 1;
 }
 
-.nutrition__field label {
+.nutrition__field-label {
     font-size: 0.875rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
-.nutrition__field input[type="text"],
-.nutrition__field input[type="tel"],
-.nutrition__field input[type="email"] {
+.nutrition__field-input {
     border: 1px solid #c9cdd3;
     background-color: transparent;
     border-radius: 0.5rem;
@@ -522,7 +504,7 @@ strong, b {
     border: none;
 }
 
-.nutrition__goal-group legend {
+.nutrition__goal-legend {
     font-size: 0.875rem;
     font-weight: 600;
     margin-bottom: .5rem;
@@ -539,7 +521,7 @@ strong, b {
     gap: 0.5rem;
 }
 
-.nutrition__radio-option input[type="radio"] {
+.nutrition__radio-input {
     appearance: none;
     width: 22px;
     height: 22px;
@@ -550,7 +532,7 @@ strong, b {
     cursor: pointer;
 }
 
-.nutrition__radio-option input[type="radio"]::after {
+.nutrition__radio-input::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -564,11 +546,11 @@ strong, b {
     transition: transform 0.2s ease-in-out;
 }
 
-.nutrition__radio-option input[type="radio"]:checked::after {
+.nutrition__radio-input:checked::after {
     transform: translate(-50%, -50%) scale(1);
 }
 
-.nutrition__radio-option label {
+.nutrition__radio-label {
     font-size: 1rem;
     font-weight: 600;
     color: var(--bold-text-color);
@@ -581,7 +563,7 @@ strong, b {
     gap: 0.75rem;
 }
 
-.nutrition__checkbox-container input[type="checkbox"] {
+.nutrition__checkbox-input {
     appearance: none;
     width: 20px;
     height: 20px;
@@ -591,7 +573,7 @@ strong, b {
     cursor: pointer;
 }
 
-.nutrition__checkbox-container input[type="checkbox"]:checked::after {
+.nutrition__checkbox-input:checked::after {
     content: '✔';
     display: block;
     color: var(--accent);
@@ -602,7 +584,7 @@ strong, b {
     transform: translate(-50%, -50%);
 }
 
-.nutrition__checkbox-container label {
+.nutrition__checkbox-label {
     font-size: 0.875rem;
     font-weight: 600;
     cursor: pointer;
