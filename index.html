@@ -102,7 +102,7 @@
     </section>
 
     <!-- ONLINE COURSE BLOCK -->
-    <section class="online-course section flex-row">
+    <section class="online-course section">
         <img src="img/6.webp" height="344" width="560" alt="Курс растяжки" class="rounded">
 
         <div class="online-course__info flex-column">
@@ -128,6 +128,7 @@
 
     <!-- TABS BLOCK -->
     <section class="tabs-block">
+        <h2 class="visually-hidden">Преимущества</h2>
         <button class="tabs-block__tab tabs-block__tab_active focus-outline" data-tab="team">Тренеры</button>
         <button class="tabs-block__tab focus-outline" data-tab="equipment">Оборудование</button>
         <button class="tabs-block__tab focus-outline" data-tab="reviews">Отзывы</button>
@@ -135,11 +136,11 @@
 
     <!-- TEAM BLOCK -->
     <section class="team section flex-column" data-section="team">
-        <h2 class="team__title hidden">Тренеры</h2>
+        <h2 class="team__title visually-hidden">Тренеры</h2>
         <div class="team__container flex-row">
             <p class="team__description">
                 Занятия на платформе проводят профессиональные тренеры, спортсмены, мастера спорта. Очень важно доверять
-                тренеру, прислушиваться к нему, чтобы тренировка была эффективной
+                тренеру, прислушиваться к нему, чтобы тренировка была эффективной и безопасной
             </p>
 
             <ul class="team__trainers-list">
@@ -165,8 +166,8 @@
     </section>
 
     <!-- EQUIPMENT BLOCK -->
-    <section class="equipment section flex-column hidden" data-section="equipment">
-        <h2 class="equipment_title hidden">Оборудование</h2>
+    <section class="equipment section flex-column visually-hidden" data-section="equipment">
+        <h2 class="equipment__title visually-hidden">Оборудование</h2>
         <div class="flex-row">
             <p class="equipment__description">Для эффективных тренировок вам понадобятся базовые аксессуары. Мы собрали
                 список того, что пригодится в каждом курсе.</p>
@@ -194,8 +195,8 @@
     </section>
 
     <!-- REVIEWS BLOCK -->
-    <section class="reviews section flex-column hidden" data-section="reviews">
-        <h2 class="reviews__title hidden">Отзывы</h2>
+    <section class="reviews section flex-column visually-hidden" data-section="reviews">
+        <h2 class="reviews__title visually-hidden">Отзывы</h2>
         <div class="reviews__list">
 
             <article class="review-card">
@@ -278,9 +279,9 @@
     <!-- STEPS BLOCK -->
     <section class="steps section flex-column">
         <h2 class="steps__title heading-2">Как это работает</h2>
-        <div class="steps flex-row">
+        <div class="steps__list flex-row">
             <article class="steps__step">
-                <p class="steps__number tabs-block__tab_active">01</p>
+                <p class="steps__number steps__number_active">01</p>
                 <h3 class="steps__heading heading-3">Выбор программы</h3>
                 <p class="steps__text">Выберите программу, которая вам нравится или заполните анкету на сайте, чтобы мы
                     смогли подобрать для
@@ -288,7 +289,7 @@
             </article>
 
             <article class="steps__step">
-                <p class="steps__number tabs-block__tab_active">02</p>
+                <p class="steps__number steps__number_active">02</p>
                 <h3 class="steps__heading heading-3">Личный кабинет</h3>
                 <p class="steps__text">После оплаты тренировки появятся в личном кабинете. Каждая тренировка открывается
                     после выполнения
@@ -296,7 +297,7 @@
             </article>
 
             <article class="steps__step">
-                <p class="steps__number tabs-block__tab_active">03</p>
+                <p class="steps__number steps__number_active">03</p>
                 <h3 class="steps__heading heading-3">Правильный темп</h3>
                 <p class="steps__text">Включите видео-тренировку и занимайтесь когда и где вам удобно. В тренировку
                     включён таймер, чтобы вы
@@ -304,7 +305,7 @@
             </article>
 
             <article class="steps__step">
-                <p class="steps__number tabs-block__tab_active">04</p>
+                <p class="steps__number steps__number_active">04</p>
                 <h3 class="steps__heading heading-3">Поддержка тренера</h3>
                 <p class="steps__text">Каждое занятие сопровождается инструкцией тренера по технике выполнения всех
                     упражнений —
@@ -376,7 +377,7 @@
 
 <footer class="footer">
     <div class="footer__copyright">
-        <p class="site-footer__text">Fitline © 2025 Все права защищены</p>
+        <p class="footer__text">Fitline © 2025 Все права защищены</p>
     </div>
 
     <div class="footer__social">

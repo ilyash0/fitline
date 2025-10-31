@@ -107,7 +107,7 @@
     border-radius: var(--radius-md);
 }
 
-.hidden {
+.visually-hidden {
     display: none;
 }
 
@@ -545,7 +545,7 @@
     margin: 0;
 }
 
-.steps__number.tabs-block__tab_active {
+.steps__number_active {
     background: var(--accent);
     color: white;
 }
