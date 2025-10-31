@@ -13,7 +13,7 @@
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
-    <script src="js/script.js"></script>
+
 </head>
 <body class="body">
 <header class="header">
@@ -91,14 +91,11 @@
 
     <!-- ONLINE COURSE BLOCK -->
     <section class="online-course section">
-        <img src="img/6.webp" height="344" width="560" alt="Курс растяжки" class="rounded">
         <div class="online-course__info flex-column">
             <p class="online-course__eyebrow">Онлайн-курс</p>
             <h2 class="online-course__title heading-2">Растяжка</h2>
             <p class="online-course__text">Классическая растяжка на все тело на платформе Fitline. Занятие для спины,
-                стоп, продольного и
-                поперечного
-                шпагата</p>
+                стоп, продольного и поперечного шпагата</p>
             <div class="online-course__badges flex-row">
                 <p class="online-course__badge">Высокий рейтинг <img src="img/star.svg" alt="Звёзд">5.0</p>
                 <p class="online-course__badge">
@@ -111,6 +108,7 @@
                 <a class="online-course__buy-btn button button_primary focus-outline" href="#">Купить курс</a>
             </div>
         </div>
+        <img src="img/6.webp" height="344" width="560" alt="Курс растяжки" class="online-course__image rounded">
     </section>
 
     <!-- TABS BLOCK -->
@@ -242,16 +240,15 @@
     <!-- INFO BLOCK -->
     <section class="info">
         <div class="info__content flex-row">
-            <div>
+            <div class="info__text-content">
                 <h2 class="info__title heading-2">О платформе Fitline</h2>
                 <p class="info__text">Fitline - это платформа онлайн-тренировок от лучших тренеров России. Большой выбор
-                    программ и
-                    разный уровень сложности в каждой из них позволят вам подобрать ту физическую нагрузку, которая
-                    необходима. На платформе есть тренировки для разных целей: снижение веса, набор мышечной массы,
-                    восстановление, развитие гибкости, поддержка общего тонуса организма.</p>
+                    программ и разный уровень сложности в каждой из них позволят вам подобрать ту физическую нагрузку,
+                    которая необходима. На платформе есть тренировки для разных целей: снижение веса, набор мышечной
+                    массы, восстановление, развитие гибкости, поддержка общего тонуса организма.</p>
                 <a class="button button_primary focus-outline" href="#">Узнать больше</a>
             </div>
-            <img src="img/10.webp" height="402" width="560" class="rounded"
+            <img src="img/10.webp" height="402" width="560" class="info__image rounded"
                  alt="Женщина в спортивной форме выполняет боковую растяжку ног">
         </div>
     </section>
@@ -316,7 +313,7 @@
                     <input class="nutrition__field-input" type="email" id="email" name="email" required>
                 </div>
                 <fieldset class="nutrition__goal-group">
-                    <legend class="nutrition__goal-legend">Ваша цель</legend>
+                    <p class="nutrition__goal-text">Ваша цель</p>
                     <div class="nutrition__goal-options">
                         <div class="nutrition__radio-option">
                             <input class="nutrition__radio-input" type="radio" id="weight-loss" name="goal"
@@ -366,5 +363,6 @@
         <a href="#" class="footer__link focus-outline">Политика конфиденциальности</a>
     </div>
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>

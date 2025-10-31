@@ -262,6 +262,7 @@
 /* ONLINE COURSE BLOCK */
 .online-course {
     gap: var(--gap);
+    flex-direction: row-reverse;
     max-width: 72.5rem;
     margin: 2em auto;
     box-sizing: border-box;
@@ -518,6 +519,10 @@
     margin: 0 auto;
 }
 
+.info__text-content {
+    flex: 1;
+}
+
 
 /* STEPS BLOCK */
 .steps {
@@ -618,7 +623,7 @@
     border: none;
 }
 
-.nutrition__goal-legend {
+.nutrition__goal-text {
     font-size: 0.875rem;
     font-weight: 400;
     margin-bottom: .5rem;

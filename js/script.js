@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
             tab.classList.add('tabs-block__tab_active');
 
             sections.forEach(section => {
-                section.classList.add('hidden');
+                section.classList.add('visually-hidden');
             });
 
-            document.querySelector(`[data-section="${target}"]`).classList.remove('hidden');
+            document.querySelector(`[data-section="${target}"]`).classList.remove('visually-hidden');
         });
     });
 });
