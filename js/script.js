@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // переключение страниц
     const tabs = document.querySelectorAll('[data-tab]');
     const sections = document.querySelectorAll('[data-section]');
 
@@ -16,6 +17,44 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector(`[data-section="${target}"]`).classList.remove('visually-hidden');
         });
     });
+
+    // Слайдер для отзывов
+    const reviewsSlider = document.getElementById('reviews-slider');
+    if (reviewsSlider) {
+        const track = document.getElementById('reviews-slider-track');
+        const slides = reviewsSlider.querySelectorAll('.reviews-slider__slide');
+        const prevBtn = document.getElementById('reviews-slider-prev');
+        const nextBtn = document.getElementById('reviews-slider-next');
+        const dots = document.querySelectorAll('.reviews-slider__dot');
+
+        let currentIndex = 0;
+        const slideWidth = 100;
+
+        function updateSlider() {
+            track.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateSlider();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateSlider();
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentIndex = index;
+                updateSlider();
+            });
+        });
+    }
 });
 
 function toggleMenu() {

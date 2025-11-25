@@ -178,62 +178,77 @@
     <!-- REVIEWS BLOCK -->
     <section class="reviews section flex-column visually-hidden" data-section="reviews">
         <h2 class="reviews__title visually-hidden">Отзывы</h2>
-        <div class="reviews__list">
-            <article class="review-card">
-                <div class="review-card__header">
-                    <img src="img/7.webp" alt="Анна Смирнова" class="review-card__avatar">
-                    <div class="review-card__info">
-                        <h4 class="review-card__name">Анна Смирнова</h4>
-                        <div class="review-card__rating">
-                            <img class="review-card__star-image" src="img/star.svg" alt="Звезда">
-                            <img class="review-card__star-image" src="img/star.svg" alt="Звезда">
-                            <img class="review-card__star-image" src="img/star.svg" alt="Звезда">
-                            <img class="review-card__star-image" src="img/star.svg" alt="Звезда">
-                            <img class="review-card__star-image" src="img/star.svg" alt="Звезда">
+        <div class="reviews-slider" id="reviews-slider">
+            <div class="reviews-slider__track" id="reviews-slider-track">
+                <article class="review-card reviews-slider__slide">
+                    <div class="review-card__header">
+                        <img src="img/7.webp" alt="Анна Смирнова" class="review-card__avatar">
+                        <div class="review-card__info">
+                            <h4 class="review-card__name">Анна Смирнова</h4>
+                            <div class="review-card__rating">
+                                <img class="review-card__star-image" src="img/gold-star.svg" alt="Звезда">
+                                <img class="review-card__star-image" src="img/gold-star.svg" alt="Звезда">
+                                <img class="review-card__star-image" src="img/gold-star.svg" alt="Звезда">
+                                <img class="review-card__star-image" src="img/gold-star.svg" alt="Звезда">
+                                <img class="review-card__star-image" src="img/star.svg" alt="Звезда">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <p class="review-card__text">
-                    Отличные тренировки! Особенно полюбилась растяжка. За 2 месяца стала намного гибче.
-                    Тренеры объясняют доступно, атмосфера поддерживающая.
-                </p>
-            </article>
-            <article class="review-card">
-                <div class="review-card__header">
-                    <img src="img/8.webp" alt="Михаил Петров" class="review-card__avatar">
-                    <div class="review-card__info">
-                        <h4 class="review-card__name">Михаил Петров</h4>
-                        <div class="review-card__rating">
-                            <img class="review-card__star-image" src="img/star.svg" alt="Звезда">
-                            <img class="review-card__star-image" src="img/star.svg" alt="Звезда">
-                            <img class="review-card__star-image" src="img/star.svg" alt="Звезда">
-                            <img class="review-card__star-image" src="img/star.svg" alt="Звезда">
-                            <img class="review-card__star-image" src="img/star.svg" alt="Звезда">
+                    <p class="review-card__text">
+                        Отличные тренировки! Особенно полюбилась растяжка. За 2 месяца стала намного гибче.
+                        Тренеры объясняют доступно, атмосфера поддерживающая.
+                    </p>
+                </article>
+                <article class="review-card reviews-slider__slide">
+                    <div class="review-card__header">
+                        <img src="img/8.webp" alt="Михаил Петров" class="review-card__avatar">
+                        <div class="review-card__info">
+                            <h4 class="review-card__name">Михаил Петров</h4>
+                            <div class="review-card__rating">
+                                <img class="review-card__star-image" src="img/gold-star.svg" alt="Звезда">
+                                <img class="review-card__star-image" src="img/gold-star.svg" alt="Звезда">
+                                <img class="review-card__star-image" src="img/gold-star.svg" alt="Звезда">
+                                <img class="review-card__star-image" src="img/gold-star.svg" alt="Звезда">
+                                <img class="review-card__star-image" src="img/gold-star.svg" alt="Звезда">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <p class="review-card__text">
-                    Удобно заниматься дома, когда хочется. Программа питания помогла привести в форму.
-                </p>
-            </article>
-            <article class="review-card">
-                <div class="review-card__header">
-                    <img src="img/9.webp" alt="Елена Козлова" class="review-card__avatar">
-                    <div class="review-card__info">
-                        <h4 class="review-card__name">Елена Козлова</h4>
-                        <div class="review-card__rating">
-                            <img class="review-card__star-image" src="img/star.svg" alt="Звезда">
-                            <img class="review-card__star-image" src="img/star.svg" alt="Звезда">
-                            <img class="review-card__star-image" src="img/star.svg" alt="Звезда">
-                            <img class="review-card__star-image" src="img/star.svg" alt="Звезда">
-                            <img class="review-card__star-image" src="img/star.svg" alt="Звезда">
+                    <p class="review-card__text">
+                        Удобно заниматься дома, когда хочется. Программа питания помогла привести в форму.
+                    </p>
+                </article>
+                <article class="review-card reviews-slider__slide">
+                    <div class="review-card__header">
+                        <img src="img/9.webp" alt="Елена Козлова" class="review-card__avatar">
+                        <div class="review-card__info">
+                            <h4 class="review-card__name">Елена Козлова</h4>
+                            <div class="review-card__rating">
+                                <img class="review-card__star-image" src="img/gold-star.svg" alt="Звезда">
+                                <img class="review-card__star-image" src="img/star.svg" alt="Звезда">
+                                <img class="review-card__star-image" src="img/star.svg" alt="Звезда">
+                                <img class="review-card__star-image" src="img/star.svg" alt="Звезда">
+                                <img class="review-card__star-image" src="img/star.svg" alt="Звезда">
+                            </div>
                         </div>
                     </div>
+                    <p class="review-card__text">
+                        Замечательная платформа! Все структурировано, понятно и по делу. Уже через месяц результаты заметны.
+                    </p>
+                </article>
+            </div>
+            <div class="reviews-slider__controls">
+                <button class="reviews-slider__prev focus-outline" id="reviews-slider-prev">
+                    <img alt="Предыдущий отзыв" class="flip-horizontally" src="img/arrow.svg">
+                </button>
+                <div class="reviews-slider__dots">
+                    <button class="reviews-slider__dot active focus-outline" aria-label="Отзыв 1"></button>
+                    <button class="reviews-slider__dot focus-outline" aria-label="Отзыв 2"></button>
+                    <button class="reviews-slider__dot focus-outline" aria-label="Отзыв 3"></button>
                 </div>
-                <p class="review-card__text">
-                    Замечательная платформа! Все структурировано, понятно и по делу. Уже через месяц результаты заметны.
-                </p>
-            </article>
+                <button class="reviews-slider__next focus-outline" id="reviews-slider-next">
+                    <img alt="Следующий отзыв" src="img/arrow.svg">
+                </button>
+            </div>
         </div>
     </section>
 
