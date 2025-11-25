@@ -775,5 +775,10 @@
 
 .footer__icon {
     width: 1.5rem;
+    transition: transform 0.2s ease, filter 0.2s ease;
 }
 
+.footer__icon:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
