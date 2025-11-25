@@ -25,11 +25,11 @@
     </button>
     <nav aria-label="Основная навигация">
         <ul class="header__menu">
-            <li><a class="header__menu-link focus-outline" href="#">Йога</a></li>
-            <li><a class="header__menu-link focus-outline" href="#">МФР</a></li>
-            <li><a class="header__menu-link focus-outline" href="#">Растяжка</a></li>
-            <li><a class="header__menu-link focus-outline" href="#">HIIT</a></li>
-            <li><a class="header__menu-link focus-outline" href="#">Гайды</a></li>
+            <li><a class="header__menu-link focus-outline" href="#courses" data-target="yoga">Йога</a></li>
+            <li><a class="header__menu-link focus-outline" href="">МФР</a></li>
+            <li><a class="header__menu-link focus-outline" href="#courses" data-target="stretching">Растяжка</a></li>
+            <li><a class="header__menu-link focus-outline" href="#courses" data-target="hiit">HIIT</a></li>
+            <li><a class="header__menu-link focus-outline" href="#info">Гайды</a></li>
         </ul>
     </nav>
     <div class="header__buttons">
@@ -47,7 +47,7 @@
 
 <main>
     <!-- HERO BLOCK -->
-    <section class="hero section">
+    <section id="hero" class="hero section">
         <div class="hero__content">
             <h1 class="hero__title heading-1">Фитнес платформа онлайн-тренировок</h1>
             <p class="hero__text">
@@ -55,14 +55,14 @@
                 снижение веса, набор мышечной массы и многое другое. Занимайтесь когда и
                 где вам удобно.
             </p>
-            <a class="button button_primary focus-outline" href="#">Выбрать курс</a>
+            <a class="button button_primary focus-outline" href="#courses">Выбрать курс</a>
         </div>
         <img class="hero__image" src="img/1.webp" width="613"
              alt="Поддержка тренера, уровни сложности и программы питания">
     </section>
 
     <!-- COURSES BLOCK -->
-    <section class="courses section flex-column">
+    <section id="courses" class="courses section flex-column">
         <h2 class="courses__title heading-2">Выберите курс</h2>
         <div class="courses__list flex-row">
             <a class="course-card focus-outline" href="#">
@@ -90,7 +90,7 @@
     </section>
 
     <!-- ONLINE COURSE BLOCK -->
-    <section class="online-course section">
+    <section id="stretching-course" class="online-course section">
         <div class="online-course__info flex-column">
             <p class="online-course__eyebrow">Онлайн-курс</p>
             <h2 class="online-course__title heading-2">Растяжка</h2>
@@ -149,7 +149,7 @@
     </section>
 
     <!-- EQUIPMENT BLOCK -->
-    <section class="equipment section flex-column visually-hidden" data-section="equipment">
+    <section id="equipment" class="equipment section flex-column visually-hidden" data-section="equipment">
         <h2 class="equipment__title visually-hidden">Оборудование</h2>
         <div class="flex-row">
             <p class="equipment__description">Для эффективных тренировок вам понадобятся базовые аксессуары. Мы собрали
@@ -176,7 +176,7 @@
     </section>
 
     <!-- REVIEWS BLOCK -->
-    <section class="reviews section flex-column visually-hidden" data-section="reviews">
+    <section id="reviews" class="reviews section flex-column visually-hidden" data-section="reviews">
         <h2 class="reviews__title visually-hidden">Отзывы</h2>
         <div class="reviews-slider" id="reviews-slider">
             <div class="reviews-slider__track" id="reviews-slider-track">
@@ -253,7 +253,7 @@
     </section>
 
     <!-- INFO BLOCK -->
-    <section class="info">
+    <section id="info" class="info">
         <div class="info__content flex-row">
             <div class="info__text-content">
                 <h2 class="info__title heading-2">О платформе Fitline</h2>
@@ -269,7 +269,7 @@
     </section>
 
     <!-- STEPS BLOCK -->
-    <section class="steps section flex-column">
+    <section id="how-it-works" class="steps section flex-column">
         <h2 class="steps__title heading-2">Как это работает</h2>
         <div class="steps__list flex-row">
             <article class="steps__step">
@@ -304,7 +304,7 @@
     </section>
 
     <!-- NUTRITION FORM BLOCK -->
-    <section class="nutrition section">
+    <section id="nutrition" class="nutrition section">
         <div class="nutrition__container">
             <h2 class="nutrition__title heading-2">Персональный план питания</h2>
             <p class="nutrition__description">
